@@ -40,6 +40,7 @@ public class clock extends javax.swing.JFrame {
     public clock() {
         initComponents();
         
+       
         updateTimer = new Timer(DELAY, new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
