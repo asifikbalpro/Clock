@@ -21,7 +21,6 @@ import javax.swing.Timer;
 public class clock extends javax.swing.JFrame {
 
     private static final long serialVersionUID = 1L;
-
     /**
      * Creates new form clock
      */
@@ -50,10 +49,7 @@ public class clock extends javax.swing.JFrame {
                String formatedTimeString = formatTime.format(currentTime);
                                
                Clock.setText(formatedTimeString);
-               AlarmClock.setText(formatedTimeString);
-              
-               
-               
+               AlarmClock.setText(formatedTimeString);   
             }
         });
         updateTimer.start();
@@ -321,9 +317,7 @@ public class clock extends javax.swing.JFrame {
                             lbl_sec.setText(" " + getSec());
                             lbl_min.setText(" " + getMin());
                             lbl_hour.setText(" "+ getHour());
-
                         } catch (InterruptedException e) {
-
                         }
                     }
                 }
